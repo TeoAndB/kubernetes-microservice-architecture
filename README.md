@@ -4,7 +4,9 @@ Inspired from: https://levelup.gitconnected.com/databases-in-a-kubernetes-angula
 
 ## How to run locally:
 
-Install .NET, npm, docker and other dependencies if needed. Dependencies need to be installed such that the dockerfile in DempApp can be run without problems.
+Install .NET, npm, docker and other dependencies if needed. Dependencies need to be installed such that the dockerfile in DempApp can be run without problems. Test this by running this command inside the DemoApp folder:
+`docker build .`
+
 Install minikube. Start a session:
 
 `
@@ -28,5 +30,6 @@ Forard the nodeports:
 ` k port-forward svcMongoDbPort:81`
 
 You are all set! Serve the demoapp-service: 
+
 
 `minikube service demoapp-service`
